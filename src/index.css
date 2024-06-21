@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    /* COLORS */
+    --color-peachy: #fedfdf;
+    --color-matcha: #cfe2b0;
+    --color-berry: #a3201b;
+    --color-brownie: #cfad95;
+    --color-light-orange: #fcc8ad;
+    --color-typo: #414141;
+}
+
+@layer base {
+    /* FONTS */
+    @font-face {
+        font-family: 'futura';
+        font-weight: 400;
+        src: url(./assets/fonts/FuturaPTMedium.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'futura';
+        font-weight: 400;
+        font-style: oblique;
+        src: url(./assets/fonts/FuturaPTMediumOblique.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'futura';
+        font-weight: 700;
+        src: url(./assets/fonts/FuturaPTBold.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'futura';
+        font-weight: 700;
+        font-style: oblique;
+        src: url(./assets/fonts/FuturaPTBoldOblique.otf) format('opentype');
+    }
+}
+
+html {
+    font-family: 'futura', sans-serif;
+    color: var(--color-typo);
+    scroll-behavior: smooth;
+}
+
+body {
+    overscroll-behavior: none;
+    background-color: #f8f8f8;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(127, 127, 127);
+    background-clip: padding-box;
+
+    &:hover {
+        background: #7f7f7f99;
+        background-clip: padding-box;
+    }
+
+    &:active {
+        background: #7f7f7fcc;
+        background-clip: padding-box;
+    }
+
+    border: 2px solid transparent;
+    border-radius: 9999px;
+}
+
+/* DISABLE SELECT BUTTON TEXT */
+button {
+    user-select: none;
+}
+
+/* HIDE NUMBER INPUT ARROWS */
+/* firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+/* chrome, safari, edge, opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    padding-right: 1.5rem;
+}
+
+/* DISABLE INPUT OUTLINE ON FOCUS */
+select:focus {
+    outline: none;
+}
