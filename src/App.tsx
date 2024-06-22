@@ -4,13 +4,14 @@ import { Fade } from 'react-awesome-reveal';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { images } from './assets';
+import { images } from '@/assets';
 
 import { ConfirmationModal } from '@components/shared';
 import { ResultSection, SwapForm } from '@/components';
 
-import { selectConfirmation } from './redux/feature/modals/confirmationSlice';
-import { useCurrencies } from './hooks';
+import { useCurrencies } from '@/hooks';
+
+import { selectConfirmation } from '@redux/feature/modals';
 
 function App() {
     //// STATES ////
