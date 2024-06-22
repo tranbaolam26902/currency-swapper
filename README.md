@@ -1,8 +1,8 @@
 # CURRENCY SWAPPER
 
-## Created with React + TypeScript + Vite
+**Created with React + TypeScript + Vite**
 
-## [Live demo](https://currency-swapper.vercel.app/)
+**[Live demo](https://currency-swapper.vercel.app/)**
 
 ## Features
 
