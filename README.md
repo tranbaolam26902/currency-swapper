@@ -11,7 +11,7 @@
 - Debounce input (prevent fetching api on every key down)
 - Loading animation while fetching api
 - Control Confirmation Modal with keyboard for better user experience
-- Toast message after confirm swapping
+- Toast message after confirming swap
 - Responsive for mobile devices
 
 ## Libraries & Framework
