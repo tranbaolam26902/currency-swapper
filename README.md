@@ -14,7 +14,7 @@
 - Toast message after confirming swap
 - Responsive for mobile devices
 
-## Libraries & Framework
+## Libraries & Frameworks
 
 - Redux Toolkit
 - Axios
